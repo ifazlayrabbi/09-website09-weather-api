@@ -6,7 +6,7 @@ Error:
 StatusCode
 ----------
 	401 = Authorization code - not given/ wrong 	=> Unauthorized
-	403 = Authorization code - disabled 			=> Forbidden
+	403 = Authorization code - disabled 		=> Forbidden
 	404 = Error in API link/ Parameter value error	=> Not Found
 
 
