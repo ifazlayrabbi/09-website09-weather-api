@@ -9,14 +9,6 @@ app.use(bodyParser.urlencoded({extended: true}))
 const https = require('https')
 require('dotenv').config()
 
-const port = process.env.PORT || 3000
-app.listen(port, (req, res) => {
-	console.log('Server running on port '+port)
-})
-
-
-
-
 
 
 
@@ -24,8 +16,6 @@ app.listen(port, (req, res) => {
 app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/index.html')
 })
-
-
 
 app.post('/', (req, res) => {
 	const api_key = process.env.API_KEY
@@ -66,3 +56,9 @@ app.post('/', (req, res) => {
 	// console.log(JSON.stringify(people1))
 
 
+
+
+
+const port = process.env.PORT || 3000
+app.listen(port, () => console.log('Server running on port '+port))
+	
