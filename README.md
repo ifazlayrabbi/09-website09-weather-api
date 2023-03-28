@@ -1,5 +1,5 @@
 # site9-weather-api
-Website: https://weather-fr.onrender.com
+Website: https://weatherapp-fr.onrender.com
 
 Weather project - using api.
 - Nodejs backend
