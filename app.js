@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 const https = require('https')
 require('dotenv').config()
+app.use(express.static('public'))
 
 
 
